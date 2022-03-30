@@ -1,0 +1,277 @@
+
+
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+}
+body{
+	    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+/***********************start header*****************/
+#parent{
+	background: url(images/bg-header-desktop.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.container{
+	width: 80%;
+	margin:0 auto;
+}
+/***********mobile screen***********/
+@media (max-width: 600px){
+	.container{
+		width: 100%;
+	}
+}
+/***********mobile screen***********/
+
+
+.logo{
+	 left: 0;
+    display: flex;
+    justify-content: center;
+    margin: 108px 0;
+}
+.container h1{
+
+		text-align: center;
+		font-size: 50px;
+        font-weight: 600;
+        margin:1.5em 0;
+}
+
+.container p{
+
+    color: #777;
+    margin: 25px 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.button{
+    display: flex;
+    justify-content: space-between;
+    width: 720px;
+    height: 250px;
+    align-items: center;
+   margin:0 auto;
+}
+
+
+ .button a{
+
+	text-decoration: none;
+    border-radius: 25px;
+    width: 300px;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    	color: white;
+
+}
+ .button a:first-of-type{
+	background-color: #26baa4;
+	transition: 0.3s;
+	box-shadow: 2px 2px 7px #26baa4;
+}
+ .button a:last-of-type{
+	background-color: #6173ff;
+	transition: 0.3s;
+	box-shadow: 2px 2px 7px #6173ff;
+}
+.button a:hover{
+	box-shadow: none;
+}
+ .second{
+	text-align: center;
+    font-size: 27px;
+    font-weight: 600;
+    margin: 1.5em 0;
+}
+
+.para{
+	 color: #777;
+    margin: 25px 0;
+    font-size: 1.5em;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+/***********************end header*******************/
+.grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(300px , 1fr));
+	width: 80%;
+	margin:50px auto;
+	gap:50px;
+}
+.grid img{
+	width: 400px;
+}
+.grid .content{
+		margin-top: 25px;
+}
+.grid .content p{
+	font-size: 15px;
+	width: 70%;
+}
+h2{
+	font-size: 20px;
+	padding: 10px;
+}
+.clipboard{
+	width: 80%;
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.clipboard img{
+	margin-top: 60px;
+}
+.grid-content{
+	display: flex;
+	width: 80%;
+	margin: 60px auto;
+	padding-top: 15px ;
+}
+.grid-content .content{
+   text-align: center;
+   margin: 0 auto;
+}
+.grid-content .content img{
+	padding: 15px;
+}
+.grid-content .content p{
+    width: 80%;
+    color: #777;
+    line-height: 2;
+    margin: 0 auto;
+}
+
+h3{
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+.brand{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand img{
+	width: 100px;
+	margin-bottom: 15px;
+}
+
+/**********************start footer****************/
+footer{
+	width: 100%;
+    background-color: #eee;
+}
+
+footer .container{
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 0;
+}
+footer .image{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+
+}
+footer .image img{
+	width: 50px;
+}
+footer .links{
+
+    display: flex;
+
+}
+footer .links .col{
+
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+footer .container a{
+    text-decoration: none;
+    color: #777;
+    margin-bottom: 15px;
+}
+footer  a:hover{
+	color: #26baa4;
+	
+}
+footer .container .media {
+	display: flex;
+}
+footer .container .media  a{
+	margin-left: 10px;
+	width: 40px;
+}
+
+footer .container .media  img:hover{
+	background-color: #26baa4;
+}
+
+/*************mobile screen******/
+@media (max-width: 600px){
+	.container{
+		width: 80%;
+	}
+	.button{
+		height: 115px;
+		flex-direction: column;
+		width: 100%;
+		margin:50px auto;
+	}
+	.clipboard img{
+		width: 100%;
+	}
+	.grid-content{
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.brand{
+		width: 100%;
+		flex-direction: column;
+	}
+	footer{
+		width: 100%;
+	}
+	.surcharge{
+		width: 100%;
+	}
+	.content h2{
+		text-align: center;
+	}
+	footer .container{
+		flex-direction: column;
+	}
+	footer .container .links{
+	   flex-direction: column;
+	}
+	footer .container .links .col{
+		padding: 5px;
+		align-items: center;
+	}
+
+}
+
+/*****************************/
